@@ -22,7 +22,7 @@ def get_suffix_fast(file_path):
     return os.path.splitext(file_path)
     # return file_path.split(".")
 
-
 if __name__ == "__main__":
-    print(get_suffix("test.png"))
-    print(get_suffix_fast("/test/test.png.bak")[-1])
+   print( get_suffix("test.png"))
+   print( get_suffix_fast("/test/test.png.bak")[-1])
+
