@@ -1,10 +1,20 @@
-
+# 列表[]-由相同数据类型组成的数据序列
+# 元组()-由不同数据类型组成的数据序列，定义后类型和值均不可变
+# 集合 无序性、互异性、确定性
 arr = (0, True, 'hello world')
-
+arr2 = (11, 22)
+arr3 = arr + arr2
 print(arr[0])
-print(arr[1])
+print(11 in arr)
+print(11 in arr3)
 print(arr[2])
 
+
+# 修改元组会报错
+try:
+    arr[0] = 1
+except TypeError:
+    print("元组不可变")
 arr = []
 
 for i in range(10):
@@ -37,3 +47,11 @@ nested_arr2[0][1] = 2
 print(nested_arr2)
 
 
+set1 = {1, 1, 2, 3}
+set2 = set([2, 2, 3])
+set3 = set('hello world')
+print(set1)
+print(set2)
+print(set3)
+for i in set1:
+    print(i)
