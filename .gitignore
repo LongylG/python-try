@@ -1,4 +1,4 @@
 .history/
 __pycache__/
-.txt
+*.txt
 .DS_Store
